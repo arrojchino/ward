@@ -1,0 +1,24 @@
+From: "Billing Team" <billing@accounts.example.com>
+To: analyst@example.org
+Subject: Updated invoice for Q4 review
+Date: Tue, 17 Nov 2026 09:15:00 -0600
+Received: from mail-relay.example.net (mail-relay.example.net [192.0.2.10]) by mx.example.org with ESMTPS id ABC123 for <analyst@example.org>; Tue, 17 Nov 2026 09:15:02 -0600
+Received: from sender-host.example.com (sender-host.example.com [198.51.100.20]) by mail-relay.example.net with ESMTP id DEF456; Tue, 17 Nov 2026 09:15:00 -0600
+Authentication-Results: mx.example.org; spf=fail smtp.mailfrom=example.com; dkim=none header.d=example.com; dmarc=fail header.from=example.com
+Reply-To: billing@other-domain.test
+Return-Path: <bounce@example.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="SAMPLEBOUND"
+
+--SAMPLEBOUND
+Content-Type: text/plain; charset="utf-8"
+
+Hello, please find the Q4 invoice attached for your review.
+This is a synthetic sample message produced for a local, read-only toolkit demo.
+--SAMPLEBOUND
+Content-Type: application/octet-stream; name="invoice_2026.scr"
+Content-Disposition: attachment; filename="invoice_2026.scr"
+Content-Transfer-Encoding: base64
+
+U3ludGhldGljIGRlbW8gYXR0YWNobWVudCBjb250ZW50LiBOb3QgZXhlY3V0YWJsZS4K
+--SAMPLEBOUND--

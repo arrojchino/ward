@@ -1,0 +1,5 @@
+Application Name,Application ID,Custom Severity Name,CVE ID,CWE ID,Flaw Name,First Found Date,Filename/Class,Finding Status,Fixed Date,Team Name,Days to Resolve,Scan Type
+Payments API,1001,High,CVE-2025-0001,CWE-89,SQL Injection,2025-02-18 15:34:12.283,src/db/query.java,Open,,Platform Team,,Static Analysis
+Payments API,1001,High,CVE-2025-0002,CWE-79,Cross-site Scripting,2025-02-20 08:00:00,src/web/form.js,Fixed,2025-02-25 08:00:00,Platform Team,5,Static Analysis
+Storefront,1002,Medium,CVE-2024-1111,CWE-22,Path Traversal,2025-01-10 12:00:00,src/files/serve.py,Open,,App Team,,Static Analysis
+Storefront,1002,Low,,CWE-787,Buffer Overflow,2025-04-02 09:30:00,native/buf.c,Fixed,2025-04-10 09:30:00,App Team,8,Static Analysis

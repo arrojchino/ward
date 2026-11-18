@@ -1,0 +1,101 @@
+{
+  "tool": "normalize-findings",
+  "source": "C:\\Users\\Garza\\soc-projects\\toolkit\\sample\\findings.csv",
+  "canonical_columns": [
+    "Application Name",
+    "Application ID",
+    "Custom Severity Name",
+    "CVE ID",
+    "CWE ID",
+    "Flaw Name",
+    "First Found Date",
+    "Filename/Class",
+    "Finding Status",
+    "Fixed Date",
+    "Team Name",
+    "Days to Resolve",
+    "Scan Type"
+  ],
+  "header_mapping": {
+    "app_name": "Application Name",
+    "app_id": "Application ID",
+    "custom_severity": "Custom Severity Name",
+    "cve": "CVE ID",
+    "cwe_id": "CWE ID",
+    "flaw_name": "Flaw Name",
+    "first_found_date": "First Found Date",
+    "filename": "Filename/Class",
+    "status": "Finding Status",
+    "resolution_date": "Fixed Date",
+    "team": "Team Name",
+    "scan_type": "Scan Type"
+  },
+  "count": 4,
+  "counts_by_severity": {
+    "High": 2,
+    "Medium": 1,
+    "Low": 1
+  },
+  "findings": [
+    {
+      "Application Name": "Payments API",
+      "Application ID": "1001",
+      "Custom Severity Name": "High",
+      "CVE ID": "CVE-2025-0001",
+      "CWE ID": "CWE-89",
+      "Flaw Name": "SQL Injection",
+      "First Found Date": "2025-02-18 15:34:12.283",
+      "Filename/Class": "src/db/query.java",
+      "Finding Status": "Open",
+      "Fixed Date": "",
+      "Team Name": "Platform Team",
+      "Days to Resolve": "",
+      "Scan Type": "Static Analysis"
+    },
+    {
+      "Application Name": "Payments API",
+      "Application ID": "1001",
+      "Custom Severity Name": "High",
+      "CVE ID": "CVE-2025-0002",
+      "CWE ID": "CWE-79",
+      "Flaw Name": "Cross-site Scripting",
+      "First Found Date": "2025-02-20 08:00:00",
+      "Filename/Class": "src/web/form.js",
+      "Finding Status": "Fixed",
+      "Fixed Date": "2025-02-25 08:00:00",
+      "Team Name": "Platform Team",
+      "Days to Resolve": "5",
+      "Scan Type": "Static Analysis"
+    },
+    {
+      "Application Name": "Storefront",
+      "Application ID": "1002",
+      "Custom Severity Name": "Medium",
+      "CVE ID": "CVE-2024-1111",
+      "CWE ID": "CWE-22",
+      "Flaw Name": "Path Traversal",
+      "First Found Date": "2025-01-10 12:00:00",
+      "Filename/Class": "src/files/serve.py",
+      "Finding Status": "Open",
+      "Fixed Date": "",
+      "Team Name": "App Team",
+      "Days to Resolve": "",
+      "Scan Type": "Static Analysis"
+    },
+    {
+      "Application Name": "Storefront",
+      "Application ID": "1002",
+      "Custom Severity Name": "Low",
+      "CVE ID": "",
+      "CWE ID": "CWE-787",
+      "Flaw Name": "Buffer Overflow",
+      "First Found Date": "2025-04-02 09:30:00",
+      "Filename/Class": "native/buf.c",
+      "Finding Status": "Fixed",
+      "Fixed Date": "2025-04-10 09:30:00",
+      "Team Name": "App Team",
+      "Days to Resolve": "8",
+      "Scan Type": "Static Analysis"
+    }
+  ]
+}
