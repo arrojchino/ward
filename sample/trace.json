@@ -1,0 +1,51 @@
+{
+  "trace_id": "TRC-2026-00117",
+  "scenario": {
+    "name": "authorized-local-read",
+    "adapter": "trace",
+    "target": "local-sandbox-host",
+    "required_evidence": [
+      "tool_call",
+      "reported_execution",
+      "observed_effect"
+    ]
+  },
+  "evidence": {
+    "tool_call": {
+      "present": true,
+      "detail": "read_file called on sample/demo.txt"
+    },
+    "reported_execution": {
+      "present": true,
+      "detail": "adapter reported success"
+    },
+    "observed_effect": {
+      "present": true,
+      "detail": "file bytes observed in state snapshot"
+    },
+    "state_change": {
+      "present": true,
+      "detail": "no modification beyond read"
+    }
+  },
+  "record": {
+    "trace_id": "TRC-2026-00117",
+    "scenario": {
+      "name": "authorized-local-read",
+      "adapter": "trace",
+      "target": "local-sandbox-host"
+    },
+    "evidence_summary": {
+      "tool_call": "present",
+      "reported_execution": "present",
+      "observed_effect": "present"
+    },
+    "platform_markers": [
+      "offline",
+      "no_remote_target",
+      "no_command_replay"
+    ]
+  },
+  "record_sha256": "ec01d9c96a438d4514633c44c4b4d6d860644a43ade90180ec9b3e83093f4c5a",
+  "note": "Synthetic offline capture fixture for heuristic consistency checking."
+}

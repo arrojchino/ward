@@ -1,0 +1,4 @@
+Name,Direction,Action,Enabled
+Allow inbound HTTPS,Inbound,Allow,True
+Block legacy SMB,Inbound,Block,True
+Allow outbound DNS,Outbound,Allow,True

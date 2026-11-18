@@ -1,0 +1,7 @@
+{
+  "connections": [
+    {"proto": "TCP", "local_address": "192.168.1.25:52143", "remote_address": "203.0.113.10:443", "state": "ESTABLISHED", "pid": 8420},
+    {"proto": "TCP", "local_address": "192.168.1.25:52201", "remote_address": "198.51.100.24:443", "state": "ESTABLISHED", "pid": 9116},
+    {"proto": "TCP", "local_address": "127.0.0.1:51300", "remote_address": "127.0.0.1:8080", "state": "ESTABLISHED", "pid": 4512}
+  ]
+}
